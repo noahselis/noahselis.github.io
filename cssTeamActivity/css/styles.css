@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Chunky";
+    src: url('../font/chunkfive-regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ariel', 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background-image: url("../image/abstractPic.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Chunky", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-width: 1px;
+
+}
+
+/* Row 2 */
+
+.fonts {
+    color: orange;
+    font-family: "Comic Sans", cursive;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.colors {
+    color: red;
+    font-weight: bold;
+}
+
+.backgrounds {
+    color: green;
+    font-family: Trebuchet MS, san-seriff;
+    font-size: 1.25em;
+}
+
+.more {
+    color: blue;
+    text-decoration: underline;
+    border: 1px dashed gray;
+    background-color: #D69BBE;
+}
+
+#outerwrapper {
+    width: 650px;
+    background-color: #E7DBF6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    width: 175px;
+    background-color: #E7DBF6;
+    float: left;
+}
+
+article{
+    margin-left: 175px;
+    background-color: white;
+    padding: 10px;
+}
+
+article {
+    margin-left: 175px;
+    background-color: white;
+    padding: 10px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
