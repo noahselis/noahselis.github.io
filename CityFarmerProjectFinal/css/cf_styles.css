@@ -1,0 +1,67 @@
+/*Noah Selis, 10/29/2021*/
+
+@font-face {
+	font-family: "quicksand";
+	src: url(../font/quicksand-regular-webfont.woff);
+}
+
+.google {
+	font-family: 'Righteous', cursive, sans-serif;
+	color: #000000;
+	font-size: 60px;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #B8D1EB;
+	color: #000000;
+}
+
+nav ul{
+	list-style: none;
+}
+
+h2 {
+	font-family: "quicksand", cursive, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#outerwrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.floatleft {
+	float: left;
+	margin-right: 3%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
+
+main {
+	background-color: #C5A98B;
+	padding: 10px;
+	clear: both;
+}
+
+main ul{
+	list-style-image: url("../image/tomato_20x20.png");
+}
+
+footer {
+	background-color: #b18658;
+	padding: 10px;
+	clear: both;
+	text-align: center;
+	font-size: .75em;
+	padding: 10px 0px 10px 0px;
+}
+
+.images{
+	opacity: .25;
+}
