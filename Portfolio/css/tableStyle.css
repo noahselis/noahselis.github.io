@@ -1,0 +1,45 @@
+/*Table Styling*/
+
+caption{
+    padding-bottom: .25em;
+    font-style: italic;
+}
+
+thead{
+    font-size: 1.25em;
+}
+
+table, td
+{
+  text-align: center;
+  padding: 1em;
+  width: 80%; 
+  border: 3px solid #F5F5F5;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inconsolata, sans-serif;
+  font-weight: 700;
+  color: #D9CAB3;
+}
+
+tbody>tr>td:nth-child(even){
+border-radius: 50%;
+}
+
+th{
+  border: none;
+}
+
+.table{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+tfoot tr td{
+    border-top:none;
+    border-left: none;
+    border-right:none;
+    margin:0;
+    padding:.25em;
+    font-size: 0.5em;
+}

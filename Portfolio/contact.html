@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!---Noah Selis
+     11/4/2021    -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Noah Selis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Inconsolata&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+
+    <title>Noah Selis Contact Page</title>
+
+    <link rel="stylesheet" href="css/portfolioStyles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="topnav">
+            <a class="homenav" href="contact.html">Contact</a>
+            <a class="homenav" href="experience.html">Experience</a>
+            <a class="homenav" href="aboutme.html">About</a>
+            <a id="logo" href="index.html"><img src="pictures/logo-2.png" alt="the best logo you've never seen"></a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="headingletters">Get in touch!</h1><br>
+        <h3 id="dogheading">
+            I'd love to hear from you!<br><br>
+            If you're hiring, please know that the salary I'm offered will largely
+            contribute to the well being of these happy animals!
+        </h3>
+        <span class="floatcontainer">
+            <div class="floatchild"><img id="dogpic" src="pictures/dogs.jpg" alt="very good dogs"></div>
+            <form class="floatchild" action="mailto:noahselis@my.cwi.edu?subject=Personal Portfolio Mail"
+                enctype="text/plain" method="POST">
+                <label for="Name">Name</label><br>
+                <input class="textcolor" type="text" name="compName" size="50" id="Name"><br>
+
+                <label for="phone">What's a good phone number to reach you at?</label><br>
+                <input class="textcolor" type="tel" id="phone" name="phone"
+                     required><br>
+
+                <label for="email">Email Address?</label><br>
+                <input class="textcolor" type="email" id="email" size="30"><br><br>
+
+                <label for="contactMethod">Best way to reach you?</label>
+                <select name="contactMethod" id="contactMethod">
+                    <option value="PhoneAM">Phone in the morning</option>
+                    <option value="PhonePM">Phone in the evening</option>
+                    <option value="email">Email, please</option>
+                    <option value="pigeon">Carrier pigeon</option>
+                </select><br><br>
+                <fieldset>
+                    <legend>How did you hear about me?</legend>
+
+                    <input type="radio" id="LinkedIn" name="how_hear" value="LinkedIn">
+                    <label for="LinkedIn">LinkedIn</label><br>
+
+                    <input type="radio" id="Job Fair" name="how_hear" value="Job Fair">
+                    <label for="Job Fair">Job Fair</label><br>
+
+                    <input type="radio" id="pole" name="how_hear" value="pole">
+                    <label for="pole">Flier on a Telephone Pole</label><br><br>
+                </fieldset>
+                <label for="comment">Questions, comments, concerns?</label><br>
+                <textarea class="textcolor" id="comment" cols="75" rows="10" name="comment"></textarea><br><br>
+
+                <label for="file">Additionally, if you have a dog, I'd love to see them.</label><br>
+                <input type="file" name="file" id="file" accept="image/*"><br>
+
+                <input type="submit" id="submit" value="Submit" class="btn">
+            </form>
+
+        </span>
+    </main>
+    <footer>
+        <address>
+            <p>Call or text me at: <a href="tel:+15092088515">509-208-1585</a></p>
+            <p>Email also works great <a href="mailto:goody2shoes@gmail.com">goody2shoes@gmail.com</a></p>
+            <p>I check it most every day for coupon codes at least.</p>
+        </address>
+        <div id="footertext">
+            <a id="github" href="https://github.com/noahselis" target="blank"><img src="pictures/github-24.png"
+                    alt="github logo"></a>&nbsp;
+            <a id="linkedin" href="https://www.linkedin.com/" target="blank"><img src="pictures/linkedin-24.png"
+                    alt="linkin logo"></a>
+            <p>Or hit me up on the socials: </p>
+        </div>
+    </footer>
+</body>
+
+</html>

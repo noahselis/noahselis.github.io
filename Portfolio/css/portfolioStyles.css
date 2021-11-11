@@ -1,0 +1,275 @@
+/*Background Styling*/
+
+body {
+  background-image: linear-gradient(to right top, #000000, #121212, #1e1e1e, #292929, #353535);  margin: 0 10%; 
+  /*background-image: linear-gradient(to right top, #bbac91, #e5decc, #F5F5F5);  margin: 0 10%; old background*/
+
+  font-family: inconsolata, sans-serif, Helvetica, 'Times New Roman';
+}
+
+body.index {
+  background-image: url("../pictures/Noah_Header-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Font Styling*/
+
+@font-face {
+  font-family: inconsolata;
+  src: url('inconsolata-webfont.woff2') format('woff2'), url('inconsolata-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: inconsolata, sans-serif, Helvetica, 'Times New Roman';
+  font-weight: normal;
+  color: #D9CAB3;
+}
+
+h1 {
+  text-align: center;
+  font-family: Montserrat, sans-serif, Helvetica, 'Times New Roman';
+  font-size: 5em;
+  text-transform: uppercase;
+  border-bottom: 3px solid #88B4E7;
+  margin-top: 50px;
+}
+
+h3 {
+  font-family: inconsolata, sans-serif, Helvetica, 'Times New Roman';
+  font-weight: normal;
+  color: #F5F5F5;
+  line-height: 1.25em;
+}
+
+.headingletters {
+  font-family: Montserrat, sans-serif, Helvetica, 'Times New Roman';
+  text-align: center;
+  color: #E05A00;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+/*Header Styling*/
+
+#logo {
+  float: right;
+  padding: 0px;
+  margin-right: 5px;
+  display: block;
+  float:left;
+}
+
+/*Navigation Styling*/
+
+.topnav {
+  margin-right: 0;
+  overflow: hidden;
+  display: block
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #D9CAB3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.homenav {
+  float: right;
+  display: block;
+  color: #D9CAB3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #F5F5F5;
+  color: #353535;
+}
+
+.topnav a.active a:hover {
+  color: #353535;
+}
+
+/*"About me section" Styling*/
+
+.textwrap {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  border-style: groove;
+  border-width: 4px;
+  border-radius: 5px;
+  padding: 2%;
+  line-height: 1.25em;
+}
+
+div.textwrap:last-child {
+  text-align: center;
+}
+
+div.icons img.icons{
+  display:block;
+	width: 6.5%;
+	float:left;
+  margin-top:2.5%;
+	margin-left:10%;
+  margin-right:2.5%;
+  margin-bottom: 0;
+}
+div.icons p.icons{
+  display:block;
+	width: 6.5%;
+	float:left;
+  margin-top: 2.5%;
+	margin-left:10%;
+  margin-right:2.5%;
+  text-align: center;
+  margin-bottom: 0;
+
+}
+div.icons p#left{
+  text-align: left;
+}
+div.icons p#left2{
+  text-align: left;
+}
+/*"Button" Styling*/
+
+a.btn {
+  background-color: #E05A0075;
+  color: #F5F5F5;
+  line-height: 50px;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-width: 0px;
+  transition: 0.75s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  opacity: 1;
+  background-color: #E05A00;
+  color: #F5F5F5;
+}
+
+div #centerButton {
+  margin: 0 auto;
+  outline: none;
+  text-align: center;
+}
+
+/*Form Styling*/
+
+input{
+  box-shadow: 1px 1px #D9CAB3;
+}
+
+#dogheading{
+  font-family: Montserrat, sans-serif, Helvetica, 'Times New Roman';
+  color: #D9CAB3;
+  padding-left: 1em;
+  margin-left:50%;
+}
+
+#dogheading>p{
+  margin-bottom: 1px;
+}
+label, input {
+  color: #D9CAB3;
+  font-family: inconsolata, sans-serif, Helvetica, 'Times New Roman';
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+#submit {
+  color: #353535;
+  margin-top: 10px;
+}
+
+.floatcontainer{
+  padding: 20px;
+  display: flex;
+}
+
+.floatchild{
+  float:right;
+}
+
+.floatchild>#dogpic{
+width: 60%;
+height: 95%;
+flex:1;
+float:left;
+border-radius: 10px;
+}
+
+.textcolor{
+  color: #353535;
+}
+
+legend{
+  color:#D9CAB3;
+}
+/*Footer styling*/
+
+footer {
+  font-family: inconsolata, sans-serif, Helvetica, 'Times New Roman';
+  font-weight: normal;
+  color: #D9CAB3;
+  border-top: 3px solid #88B4E7;
+  margin-top: 5em;
+  text-align: left;
+  line-height: .25em;
+  display: inline-block;
+  width: 100%;
+  /*position: fixed;*/
+}
+footer address p a{
+  color: inherit;
+  text-decoration: none;
+}
+
+footer address p a:hover{
+  color: #88B4E7;
+  text-decoration:underline;
+}
+
+footer address{
+  float:left;
+}
+
+#footertext{
+  margin-top:3.5%;
+}
+#footertext p{
+  float: right;
+  display: block;
+}
+div#footertext #github {
+  margin-left: 5px;
+  float: right;
+  display: block;
+}
+
+div#footertext #linkedin {
+  margin-left: 5px;
+  margin-right: 5px;
+  float: right;
+  display: block;
+}
