@@ -1,0 +1,118 @@
+/*Noah Selis and Joel Weers, 11/18/2021*/
+
+body {
+	background-color: #FFFFFF;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: #000033;
+	color: #FFFFFF;
+	background-image: url(sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	line-height: 400%;
+	text-indent: 1em;
+}
+
+nav {
+	background-color: #90C7E3;
+	font-weight: bold;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav ul {
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+#info li {
+	list-style-image: url(../image/marker.gif);
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-bottom: 0;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+h2 {
+	color: #3399CC;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+h3 {
+	color: #000033;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+footer {
+	font-size: 75%;
+	font-style: bold;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', serif;
+	background: linear-gradient(#ffffff, #5C7FA3 );
+}
+
+dt {
+	color: #000033;
+}
+
+.resort {
+	color: #5C7FA3;
+	font-weight: bold;
+}
+
+address {
+	font-size: 90%;
+}
+
+/*********************************************/
+/**********Mobile Styling*********************/
+/*********************************************/
+
+@media screen and (max-width: 640px){
+	nav ul li {
+		display: block;
+		background-color: #90C7E3;
+	}
+
+	h2 {
+		display: none;
+	}
+
+	img {
+		display: none;
+	}
+	footer{
+		background: linear-gradient(#ffffff, #5C7FA3 );
+	}
+}
+
+/*********************************************/
+/**********Tablet Styling*********************/
+/*********************************************/
+
+@media screen and (min-width:641px) {
+	nav ul li{
+		display: inline;
+		background-color: #90C7E3;
+
+	}
+	h2{
+		display: hint;
+	}
+	img{
+		display: block;
+	}
+}
