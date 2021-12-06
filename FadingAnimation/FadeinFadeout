@@ -1,0 +1,2 @@
+/* This was cool. You manipulate the opacity of "images" that you create to give the impression that one side is fading into the other. Really what you're doing it having one 
+side transition into 0% opacity while the other transitions into 100% opacity over the course of one second. P rad, man.
