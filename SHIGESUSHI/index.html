@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Business website for Shige Express in Meridian, Idaho">
+    <meta name="keywords" content="shige express meridian sushi takeout">
+    <meta name="author" content="Noah Selis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap Source Code-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--Bootstrap Icon Stylesheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!--Javascript Dependencies-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Modal 'Load When Page Opens' JS-->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#myModal').modal('show');
+        });
+    </script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Shige Sushi Express | Homepage</title>
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <!--Bootstrap Navigation Bar-->
+        <div id="navwrapper">
+            <nav class="navbar navbar-expand-sm py-0 fixed-top">
+                <a class="navbar-brand text-white" href="index.html">
+                    <p>Shige Express Meridian</p>
+                </a>
+
+                <!--Hamburger Menu Icon-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Navbar Links-->
+                <div class="collapse navbar-collapse " id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Main Content Area -->
+        <main>
+            <!--Carousel-->
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div id="shigesCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#shigesCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#shigesCarousel" data-slide-to="1"></li>
+                            <li data-target="#shigesCarousel" data-slide-to="2"></li>
+                            <li data-target="#shigesCarousel" data-slide-to="3"></li>
+                            <li data-target="#shigesCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="img/stock/plate-blackplates.jfif" class="d-block w-100 img-fluid" alt="shushi, soysauce, chopsticks">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/stock/plate-blackplates-topdown.jfif" class="d-block w-100 img-fluid"
+                                    alt="a cut up sushi roll on a black plate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/stock/platter-shushiboat.jfif" class="d-block w-100 img-fluid" alt="an assortment of sushi on a toy boat">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/stock/roll-fourinarow.jfif" class="d-block w-100 img-fluid" alt="four sushi rolls aligned in a row">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/stock/roll-x1-heldbystix.jfif" class="d-block w-100 img-fluid" alt="chopsticks holding a shushi roll">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shigesCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shigesCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--End Carousel-->
+
+            <!--Begin Jumbotron-->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="row align-items-center">
+                    <div class="col pl-5 ml-5 pr-0 mr-0 text-left">
+                        <h1 class="display-2">Irasshaimase!</h1>
+                        <p class="lead">Welcome to Shige's</p>
+                        <p>Executive Chef Shige Matsuzawa and his wife Debbie opened Shige Japanese Cuisine, the first
+                            Japanese restaurant in
+                            downtown Boise in 1992, with a vision of creating Boise's finest Japanese dining experience.
+                            After nearly 26 years in Boise, the Matsuzawa’s have taken that experience and instilled it
+                            into their current
+                            location in Meridian, Shige Sushi Express.</p>
+                    </div>
+                    <div class="col text-center">
+                        <figure>
+                            <img class="img-fluid rounded shige-smiling" src="img/people/shige-smiling.jpg" alt="Shige smiling at a plate">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!--End Jumbotron-->
+
+            <!--Begin Section One
+            <div class="container-fluid mb-5">
+                <div class="row align-items-center no-gutters w-75">
+                    <div class="col">
+                        <img id="shige-1" src="img/people/shige-inbackground-togoContainer.jpg" alt=""
+                            class="img-fluid rounded">
+                    </div>
+                    <div id="text-1" class="col">
+                        <h1>Quality Crafted</h1>
+                        <p class="lead">Shige infuses every dish he creates with his extensive knowledge<br>and passion
+                            for
+                            perfection. He started his career as a
+                            Chef in Japan,<br>before moving to California and then relocating to the Treasure Valley.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>-->
+
+
+            <!--Experimental Section One-->
+            <div class="container-fluid d-flex mb-3">
+                <div class="d-flex justify-content-start">
+                    <div class="d-flex flex-row align-items-center no-gutters w-75">
+                        <div id="text-1" class="flex-column text-left pl-4 border border-dark">
+                            <h1>Quality Crafted</h1>
+                            <p class="lead">Shige infuses every dish he creates with his extensive knowledge and passion
+                                for
+                                perfection. He started his career as a Chef in Japan, before moving to California and
+                                then
+                                relocating to the Treasure Valley.
+                            </p>
+                        </div>
+                        <div class="flex-column">
+                            <img id="shige-1" src="img/people/shige-inbackground-togoContainer.jpg" alt="Shige prepping food for a to go container"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Experimental Section One-->
+
+            <!--Section Two-->
+            <div class="container-fluid d-flex mb-3">
+                <div class="d-flex justify-content-end">
+                    <div class="d-flex flex-row align-items-center no-gutters w-75">
+                        <div class="flex-column">
+                            <img id="shige-2" src="img/people/shige-cookinginbackground.jpg" alt="shige prepping food for a to go container"
+                                class="img-fluid rounded">
+                        </div>
+                        <div id="text-2" class="flex-column">
+                            <h1>So Handsome</h1>
+                            <p class="lead">Shige Cuisine is committed to serving only the finest foods, made with the
+                                freshest ingredients. All of our dishes
+                                are made from scratch. Our traditional decor and friendly servers create a memorable
+                                dining
+                                experience.
+                                We hope to see you soon!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Section Two-->
+
+            <!--Start parallax Hero With Button to Menu-->
+            <div class="container-fluid">
+                <div class="row">
+                    <section class="bgimage">
+                        <div class="herotext text-white text-center col-5">
+                            <div class="wordbox mr-1">
+                                <div id="japanese">
+                                    <h5>来て、食べます！</h5>
+                                    <p>新鮮な食材を使用した最高級の料理のみを提供することをお約束します
+                                        すべての料理は一から作られています。
+                                        伝統的な装飾とフレンドリーなサーバーが思い出に残るダイニング体験を生み出します。
+                                        お会いできることを楽しみにしております。</p>
+                                </div>
+                                <div id="english">
+                                    <h5>Come and Eat!</h5>
+                                    <p>Shige Cuisine is committed to serving only the finest foods, made with the
+                                        freshest ingredients. All of our dishes
+                                        are made from scratch. Our traditional decor and friendly servers create a
+                                        memorable dining experience.
+                                        We hope to see you soon!</p>
+                                </div>
+                            </div>
+                            <p><a href="#" class="btn btn-primary btn-large mt-3">Menus</a></p>
+
+                    </section>
+                </div>
+            </div>
+            <!--End Hero With Button to Menu-->
+
+            <!-- Gallery-->
+            <div class="container-fluid mt-2">
+                <div class="row">
+                    <div class="col mx-1 px-0">
+                        <img src="img/food/appetizer-dumplings+.jpg"
+                            class="gallery w-100 h-50 shadow-1-strong rounded mb-1" alt="dumplings holding chopsticks" />
+
+                        <img src="img/food/appetizer-friedpyramid.jpg" class="w-100 h-50 shadow-1-strong rounded mb-1"
+                            alt="fried seafood arranged in a pyramidaaa" />
+                    </div>
+                    <div class="col mx-1 px-0">
+                        <img src="img/food/bowl-withFireUnderneath.jpg" class="w-100 h-50 shadow-1-strong rounded mb-1"
+                            alt="warm seafood soup bowl" />
+
+                        <img src="img/food/drink-redmartini.jpg" class="w-100 h-50 shadow-1-strong rounded mb-1"
+                            alt="fruity alcohol beverage in a martini glass" />
+                    </div>
+                    <div class="col mx-1 px-0">
+                        <img src="img/food/plate-sushi-closeup.jpg" class="w-100 h-50 shadow-1-strong rounded mb-1"
+                            alt="tuna steak and rolls arranged on a plate" />
+
+                        <img src="img/food/poke-closeup.jpg" class="w-100 h-50 shadow-1-strong rounded mb-1" alt="poke" />
+                    </div>
+                    <div class="col mx-1 px-0">
+                        <img src="img/food/salad-cucumber-cabbage.jpg" class="w-100 h-50 shadow-1-strong rounded mb-1"
+                            alt="seafood salad cucumber cabbage" />
+
+                        <img src="img/food/soup-crablegs.jpg" class="w-100 h-50 shadow-1-strong rounded mb-1" alt="crab leg soup" />
+                    </div>
+                </div>
+            </div>
+            <!--End Gallery -->
+
+            <!--Start Form-->
+            <div class="container-fluid mt-3 mb-5 px-0 py-3 bg-info">
+                <div class="row">
+                    <div class="col col-8 ml-3 mt-2">
+                        <img id="shigelogo" class="float-left rounded " src="img/shige-logo.jpg" alt="Shige sushi logo">
+                    </div>
+                    <div id="newsletter" class="col col-3 align-items-center p-1 mt-3">
+                        <h4 for="inputEmail">Sign up for our newsletter!</h4>
+                        <p class="pt-1">Everybody will know our specials eventually</p>
+                        <p class="small">But you'll know first</p>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        <button type="submit" class="btn btn-primary mt-3">Sign up</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-fluid mt-3 mb-5 px-0 py-3 bg-info">
+                    <div class="row">
+                        <div class="col col-8 ml-3 mt-2">
+                            <p> <a class="text-dark" href="#">Terms of Use</a> | <a class="text-dark" href="#">Privacy
+                                    Policy</a></p>
+                            <p>2021. All Rights Reserved. &copy;ShigeCorp.</p>
+                        </div>
+                        <div class="col col-3 text-right p-1 pt-3 mt-3">
+                            <p class="align-content-right">
+                                <a href="https://www.facebook.com" target="_blank"><img src="img/icon/facebook-24px.png"
+                                        alt="Facebook logo"></a>
+                                <a href="mailto:shigeshigeshige@express.gov"><i class="bi bi-envelope px-4"
+                                        style="font-size: 2.0rem; color: white;vertical-align: -.3em;"></i></a>
+                                <a href="https://www.instagram.com/shige_sushi_express_meridian_/?hl=en"
+                                    target="_blank"><img src="img/icon/instagram-24px.png" alt="Twitter logo"></a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--End Form-->
+        </main>
+
+        <!--Start Footer-->
+        <footer class="text-center fixed-bottom m-0 p-0">
+            <section>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 d-block text-white">
+                       <a href="#"><p class="hoverlinks ml-0 mb-0 mr-0 py-2">Order Online</p></a>
+                    </div>
+                    <div class="col-lg-6 d-block">
+                        <a href="#"><p class="hoverlinks ml-0 mb-0 mr-0 py-2">Get Directions</p></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!--End Footer-->
+
+
+        <!-- Trigger the modal with a button -->
+        <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+
+        <!--Start Modal-->
+        <div class="container"></div>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">COVID-19 Considerations</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Due to the ongoing pandemic, guests who decide to wear a mask indoors will be considered
+                            Shiges' boyfriend/ girlfriend
+                            and entitiled to a small portion of french fries free of charge.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--End Modal-->
+</body>
+
+</html>

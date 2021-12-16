@@ -1,0 +1,200 @@
+/*WHAT TO CHANGE
+margin between two sections
+
+fix the carousel so the user can scroll between photos
+
+think about delayed load for the jumbotron photo
+
+maybe the section images can slide in as the user scrolls
+	- make the text block line up with the photos
+	
+
+make the box smaller on the parallax hero
+
+put social media in the bottom
+
+navbar
+: menu, catering,  about
+
+flip the gradient
+
+footer:
+order online(link to doordash), contact
+
+flip the gradient on header and footer*/
+
+/*Page Styling*/
+p, h1, h2, h3, h4, h5{
+    font-family: 'Quicksand', sans-serif;
+
+} 
+
+/***Navbar Styling***/
+.navbar {
+    color: black;
+    background-image: linear-gradient(180deg, #414a4c 0%, #403f43 75%, #1a1110 100%);
+    opacity: .75;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+nav a.nav-link {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+a.navbar-brand {
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+
+
+/***Carousel Styling***/
+
+img.d-block {
+    max-width: 100%;
+    height: 1000px;
+}
+
+
+/***Jumbotron Styling***/
+
+div.jumbotron img.shige-smiling {
+    width: 60%;
+    height: 75%;
+}
+
+/***Section One and Two Styling***
+**********************************
+************INSPO*****************
+    https://sushikashiba.com/
+*********************************/
+
+#shige-1 {
+    width: 2000px;
+    margin-right: 50%;
+}
+
+#text-1 {
+    margin-left: 25%;
+    padding-right: 0px;
+    height: 300px;
+    text-align: right;
+    border: 1px solid white;
+    padding-right: 250px;
+    padding-top: 40px;
+}
+
+#shige-2 {
+    width: 2000px;
+    margin-left: 50%;
+}
+#text-2 {
+    margin-right: 12%;
+    padding-left: 0px;
+    height: 300px;
+    text-align: left;
+    border: 1px solid white;
+    padding-left: 250px;
+    padding-top: 40px;
+}
+
+/***Hero with menu button Styling***/
+
+.bgimage {
+    width: 100%;
+    height: 800px;
+    background: url(../img/people/shige-deb-cheers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.herotext {
+    top: 40%;
+    width: 50%;
+    margin-left: 25%;
+    padding: 8px;
+    border-radius: 1%;
+    background: black;
+    opacity: 0.7;
+    /*border: 1px solid white;*/
+}
+
+/*THE GOAL: WHEN THE USER HOVERS OVER THE JAPANESE 
+  CHARACTERS, THEY DISSAPEAR AND ARE REPLACED WITH
+  ENGLISH CHARACTERS. CAN'T DO IT. TRIED FOR TWO HOURS*/
+
+.herotext:hover {
+    background: black;
+    opacity: .8;
+}
+
+.wordbox {
+    /*border: 1px solid white;*/
+    position: relative;
+}
+
+#japanese {
+    opacity: 0;
+    /*border: 1px solid white;*/
+    z-index: 1;
+}
+
+#english {
+    opacity: 1;
+    top: 0px;
+    position: absolute;
+    /*border: 1px solid white;*/
+    padding-bottom: 25px;
+    z-index: 0;
+}
+
+#japanese:hover {
+    opacity: 0 !important;
+}
+
+#english:hover {
+    opacity: 1;
+}
+
+
+/***Gallery Styling***/
+
+
+/***Form Styling***/
+#shigelogo {
+    height: 225px;
+    width: 470px;
+}
+
+#newsletter {
+    line-height: 10px;
+}
+
+
+/***Footer Styling***/
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    background-image: linear-gradient(180deg, #1a1110 0%, #403f43 75%, #414a4c 100%);
+    opacity: .75;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.hoverlinks {
+    display: block;
+    color: white;
+}
+
+a p.hoverlinks:hover {
+    background-color: white;
+    color: black;
+}
