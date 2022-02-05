@@ -1,0 +1,70 @@
+.wrapper {
+    margin: auto;
+    margin-top: 3em;
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.23fr auto 2fr auto;
+    background-color: seashell;
+    border-radius: 5px;
+}
+
+.form-header {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    line-height: 3em;
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+}
+
+.form-content {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 3;
+}
+
+.submit-content {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 4;
+}
+
+.email-content {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 5;
+}
+
+.landing-header {
+    line-height: 1em;
+}
+
+.landing-sub-header {
+    line-height: 1.25em;
+    margin-top: 1em;
+}
+
+#newsletter_heading {
+    margin-bottom: 1em;
+}
+
+input {
+    margin-top: 0.45em;
+    margin-bottom: 0.75em;
+}
+
+textarea {
+    margin-top: 0.5em;
+    width: 100%;
+}
+
+#email_form {
+    margin-top: 1em;
+}
+
+div.email-content p {
+    margin-top: 1em;
+    text-align: center;
+    font-style: italic;
+}

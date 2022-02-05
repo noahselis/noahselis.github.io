@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!--********************************************************************************************************************
+
+    ***MODIFICATION LOG***
+
+    #Original Author: Noah Selis
+    #Date Created: 01/21/2022
+    #Current Version: 0.5
+    #Date Last Modified: 02/04/2022
+    #Last Modified by: Noah Selis
+    #Modification Log:
+
+        Version 0.0 - boiler plate html template | favicon | custom fonts embeded | CSS Grid layout | JS pop up when user presses a button
+        Version 0.25 - Made several new pages including an FAQ, Contact, and Newsletter signup as well as a page confirming form submissions 
+                       Created a slideshow using js showcasing success stories of the website 
+                       Created the Minimum Viable Product, next version will flesh out ideas
+        Version 0.5  - Added two additional pages to the site: An "eCommerce" page where people visiting the website can click on user profiles
+                       to connect with them and buy their ideas, and a blog-style "news" page where you can read articles that have been posted 
+                       in the past as well as this month's "Pup of the Month". I intend to update the sidebar in future versions of this page to 
+                       just plagerize The Onion content.
+                       Also updated the functionality of the FAQ section and the "success stories" page to have jQuery plugin Accordian and j
+                       bxslider respectively. 
+                       Made nav section more visible
+                       
+        
+
+
+*********************************************************************************************************************-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pup Bowl Home</title>
+    <meta name="description" content="Shark Tank, Mark Cuban, Failed, abc, television show, pitches" />
+    <meta name="author" content="Noah Selis" />
+
+    <meta property="og:title" content="Pup Bowl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:description" content="A website where people that fail on Shark Tank
+  can go to try and sell their ideas" />
+    <meta property="og:image" content="#" />
+
+    <link rel="icon" href="img/favicon-16x16.png" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="modal">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <button id="close-modal-btn">Back to Site</button>
+        </div>
+    </div>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img id="goldfish" src="img/goldfish_24px.png" alt="goldfish logo" />
+        </a>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="buy.html">Buy Ideas</a>
+            </li>
+            <li class="nav-item">
+                <a href="signup.html">Sell Ideas</a>
+            </li>
+            <li class="nav-item"><a href="FAQ.html">FAQs</a></li>
+            <li class="nav-item"><a href="news.html">News</a></li>
+            <li class="nav-item"><a href="success_withbox.html">Success Stories</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="hero">
+            <h1 class="landing-header">
+                Do You Think That You Know Better Than
+                <span class="blue-text">Mark Cuban?</span>
+            </h1>
+            <h2 class="landing-sub-header">
+                Did Those Guppies at ABC Poo Poo the Next
+                <span class="blue-text">Great American Innovation?</span>
+            </h2>
+            <h3 class="landing-sub-header">
+                Have a Second Chance At Your Dreams With
+                <span class="blue-text">Pup Bowl!</span>
+            </h3>
+            <h1 class="landing-sub-header">
+                We buy and sell the ideas that
+                <span class="blue-text">The Sharks</span> wouldn't touch. No credit check required!
+            </h1>
+        </div>
+        <div class="section">
+            <div class="cards">
+                <h2>I Wanna Buy!</h2>
+                <a href="#"><button>Buy!</button></a>
+            </div>
+            <div class="cards">
+                <h2>I Wanna Sell!</h2>
+                <a href="signup.html"><button>Sell!</button></a>
+            </div>
+            <div class="cards">
+                <h2>I'm Mark Cuban</h2>
+                <button id="show-modal-btn" class="hide-button-text">Mark?</button>
+            </div>
+        </div>
+    </div>
+    <!---------------------------jQuery CDN--------------------------->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!---------------------------jQuery UI Download Path--------------------------->
+    <script src="script/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
