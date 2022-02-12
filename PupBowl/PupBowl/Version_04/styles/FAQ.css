@@ -1,0 +1,43 @@
+h1, h2, a, p, div {
+    font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+}
+
+a:focus, a:hover{
+    color: blue;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: 3em;
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: .25fr 2fr auto 3fr;
+    background-color: seashell;
+    border-radius: 5px;
+}
+
+.faq-header{
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    text-align: center;
+}
+
+
+
+#accordion{
+    font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    margin-top: 2em;
+}
+
+div#accordion h2 {
+    font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+    font-style: italic;
+}

@@ -1,0 +1,7 @@
+BUY PAGE
+    You can only add Sally Sallerson to your shopping cart. You have to be able to add anybody
+    when you click their button.
+
+SELL PAGE
+    Make an "* indicates required field" disclaimer so that the user knows which fields are required
+    Convert the rest of the form to jQuery
