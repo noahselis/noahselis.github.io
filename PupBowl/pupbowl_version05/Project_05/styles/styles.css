@@ -1,0 +1,466 @@
+/*Credit for general landing page layout to NikValdez
+https://github.com/NikValdez/CSSGridTut/blob/master/index.css*/
+
+@font-face {
+  font-family: "SharkFontBold";
+  src: url(/font/shark-tank-fontkit/kenyan_coffee_bd-webfont.woff2)
+      format(woff2),
+    url(/font/shark-tank-fontkit/kenyan_coffee_rg-webfont.woff);
+}
+
+@font-face {
+  font-family: "SharkFontBoldItal";
+  src: url(/font/shark-tank-fontkit/kenyan_coffee_bd_it-webfont.woff)
+      format(woff),
+    url(/font/shark-tank-fontkit/kenyan_coffee_bd_it-webfont.woff2)
+      format(woff2);
+}
+
+body {
+  background-image: url("../img/water-background.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+p,
+a {
+  font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+}
+
+/***MODAL PAGE STYLING***/
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal {
+  max-width: 600px;
+  height: 300px;
+  margin: auto;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.fa {
+  font-size: 40px;
+}
+.checked {
+  color: orange;
+  margin-left: 5em;
+  margin-top: 2em;
+  font-size: 40px;
+}
+
+#close-modal-btn {
+  margin-top: 2em;
+}
+
+/***NAVBAR STYLING***/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 99%;
+  background: rgb(1, 86, 141);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 86, 141, 1) 5%,
+    rgba(65, 131, 169, 1) 20%,
+    rgba(101, 156, 184, 1) 30%,
+    rgba(129, 176, 196, 1) 50%,
+    rgba(158, 196, 208, 1) 75%,
+    rgba(186, 215, 220, 1) 90%,
+    rgba(211, 232, 231, 1) 100%
+  );
+  box-shadow: 5px 0px 20px rgba(211, 232, 231, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3em;
+}
+
+.logo {
+  display: inline-block;
+}
+
+#goldfish {
+  max-width: 2em;
+  height: auto;
+  margin-left: 1em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:hover {
+  background-color: white;
+  height: 2.35em;
+}
+
+.nav-item:hover a {
+  color: black;
+}
+
+.logo img {
+  width: 2em;
+  vertical-align: middle;
+}
+
+#countdownClock {
+  font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+  padding-top: 1em;
+}
+
+/***LANDING PAGE STYLING***/
+
+.blue-text {
+  color: #04006e;
+}
+
+.blue-text::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.landing-header {
+  font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.75em;
+  margin-top: 1em;
+}
+
+.landing-sub-header {
+  font-family: "SharkFontBoldItal", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.25fr;
+  margin-top: 0em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.hero {
+  grid-column: 1 / 4;
+  grid-row-start: 1;
+  margin-top: 1em;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.section {
+  font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+  grid-column: 1 / 4;
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: start;
+  grid-gap: 3.5em;
+  height: 20em;
+  padding-top: 4em;
+}
+
+.cards {
+  background: seashell;
+  color: black;
+  border-radius: 5px;
+  box-shadow: -8px 13px 35px 2px rgba(133, 133, 133, 1);
+  min-height: 12em;
+}
+
+.cards:hover {
+  transform: scale(1.01);
+}
+
+button {
+  font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+  display: block;
+  margin: auto;
+  background-color: #6b62fd;
+  border: none;
+  color: white;
+  margin-top: 0.75em;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide-button-text {
+  color: #6b62fd;
+}
+h2 {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+/**********COUNTDOWN CLOCK STYLING**********/
+
+div#clockBox {
+  margin-top: 3em;
+}
+
+#countdownClock {
+  max-width: fit-content;
+  border: black dotted 3px;
+  border-style: groove;
+  background-color: seashell;
+  padding: 1em;
+  margin: 0 auto;
+  box-shadow: #04006e;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: -8px 13px 35px 2px rgba(133, 133, 133, 1);
+}
+
+/**********FOOTER STYLING**********/
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  background: #111;
+  padding-top: 2em;
+  color: #fff;
+}
+
+div.footer_content {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+}
+
+.footer_content h3 {
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1em;
+  margin-left: 2em;
+  border-bottom: 1px solid white;
+  margin-bottom: 0.5em;
+}
+
+.footer_content p {
+  margin-left: 2em;
+  line-height: 1.75em;
+  font-size: 0.95em;
+  color: #cacdd2;
+}
+
+div.socials {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  padding-bottom: 1em;
+}
+
+.socials a {
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin-left: 1.5em;
+}
+
+.socials a i {
+  font-size: 1.1em;
+  width: 1em;
+  transition: color 0.4s ease;
+  margin-top: 1em;
+}
+
+div.email-content {
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  line-height: 1.5em;
+}
+
+div.email-content h1 {
+  line-height: 1.1em;
+}
+
+
+#description{
+  width: 45em;
+}
+
+#join_newsletter {
+  background-color: #6b62fd;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+  margin-left: -8px;
+}
+
+#clear_newsletter_form {
+  background-color: #6b62fd;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+}
+
+/*Cell Phone Media Query*/
+
+@media only screen and (max-width: 500px) {
+  #landing-header {
+    font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+  }
+
+  #landing-sub-header {
+    font-family: "SharkFontBoldItal", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .section {
+    font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 5em;
+    margin-bottom: 0em;
+    align-items: flex-start;
+  }
+  .cards {
+    background: #042e5e;
+    color: #d1e6e9;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: -8px 13px 35px 2px rgba(133, 133, 133, 1);
+    margin-top: 0em;
+    height: 40%;
+  }
+
+  .cards:hover {
+    transform: scale(1.01);
+  }
+
+  button {
+    font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+    display: block;
+    margin: auto;
+    background-color: #6b62fd;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #hide-button-text {
+    color: #6b62fd;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  /**********Footer Query**********/
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 0.75fr);
+    background: #111;
+    padding-top: 2em;
+    color: #fff;
+  }
+
+  footer .footer_content {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .footer_content h3 {
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1em;
+    margin-left: 2em;
+    border-bottom: 1px solid white;
+  }
+
+  .footer_content p {
+    margin: 1em 1em;
+    line-height: 1.75em;
+    font-size: 0.95em;
+    color: #cacdd2;
+    text-align: left;
+    margin-left: 3em;
+  }
+
+  div.socials {
+    grid-column-start: 4;
+    grid-column-end: 12;
+  }
+
+  .socials a {
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-left: 1em;
+  }
+
+  .socials a i {
+    font-size: 1.1em;
+    width: 1em;
+    transition: color 0.4s ease;
+    margin-top: 1em;
+  }
+}

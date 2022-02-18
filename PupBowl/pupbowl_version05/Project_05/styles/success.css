@@ -1,0 +1,31 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.heading {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  font-family: "SharkFontBold", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.image_box {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 1em;
+  margin:auto;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+#caption {
+margin-bottom: 2em;
+}
