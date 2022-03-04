@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--********************************************************************************************************************
+
+    ***MODIFICATION LOG***
+
+    #Original Author: Noah Selis
+    #Date Created: 03/04/2022
+    #Current Version: 1.0
+    #Date Last Modified: 03/04/2022
+    #Last Modified by: Noah Selis
+    #Modification Log:
+
+        Version 1.0  - Launch ready! | Created Parallax Effect with five distinct sections | Elected not to use filler
+        content because I needed to do some studying for my internship anyway and I wanted to use this as an 
+        opportunity to do both
+                       
+        
+
+
+*********************************************************************************************************************-->
+<head>
+  <title>Bootstrap 4 parallax example</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">Etherium</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#information">Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- first section - Home -->
+  <div id="home" class="home">
+    <div class="text-vcenter text-dark">
+      <h1>Ethereum</h1>
+      <h3>Decentralized Development on the Blockchain</h3>
+      <a href="#about" class="btn btn-info btn-lg">Continue</a>
+    </div>
+  </div>
+  <!-- /first section -->
+
+  <!-- second section - About -->
+  <div id="about" class="pad-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="img/doge-computer.webp" alt="" />
+        </div>
+        <div class="col-sm-6 text-center">
+          <h2>What is a Blockchain?</h2>
+          <p class="lead">
+            A blockchain is a peer to peer distributed network of folks
+            volunteering their computers to act as a sort of decentralized
+            database.
+          </p>
+          <p class="lead">
+            These computers are called “nodes”. All of these nodes contain a
+            copy of the code and all of the data that is on the blockchain. All
+            of this information is bundled together as it is uploaded as
+            “blocks” and and these blocks are “chained” together.
+          </p>
+          <p class="lead">
+            Changing any one of these blocks, because they are all chained
+            together, requires the consensus of all of the nodes on the chain
+            making it a very secure and transparent system.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /second section -->
+
+  <!-- third section - Services -->
+  <div id="services" class="pad-section">
+    <div class="container">
+      <h2 class="text-center">
+        The many benefits of programming on a blockchain
+      </h2>
+      <hr />
+      <div class="row text-center">
+        <div class="col-sm-3 col-xs-6">
+          <a href="#service1"><i class="glyphicon glyphicon-cloud"> </i></a>
+
+          <h4>Transparency</h4>
+          <p>
+            In order for something to be stored on a blockchain, it must have
+            "proof of work" that involves solving a difficult problem with brute
+            force trial and error that uses a lot of computing power.
+          </p>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <a href="#service2"><i class="glyphicon glyphicon-leaf"> </i></a>
+
+          <h4>Trustless</h4>
+          <p>
+            You don't need a bank or government verifying everything that you
+            do. Everything is peer to peer.
+          </p>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <a href="#service3"><i class="glyphicon glyphicon-phone-alt"> </i></a>
+
+          <h4>Ownership</h4>
+          <p>
+            When you create something on YouTube, YouTube ultimately owns what
+            you created. When you create something and put it on the blockchain,
+            it's yours and there are mechanisms in place that ensure only you
+            can access it.
+          </p>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <a href="#service4"><i class="glyphicon glyphicon-bullhorn"> </i></a>
+
+          <h4>Resists Censorship</h4>
+          <p>
+            With no centralized entity controlling information on the
+            blockchain, it's very difficult for an individual or government to
+            restrict access to the dapp.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /third section -->
+
+  <!-- fourth section - Information -->
+  <div id="information" class="pad-section">
+    <div class="container text-dark">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default bg-light p-5 h-100">
+            <div class="panel-heading">
+              <h2 class="panel-title">Smart Contracts</h2>
+            </div>
+            <div class="panel-body lead">
+              <p>
+                Smart Contracts are Reusable snippets of code that have been
+                uploaded to and are executed by the network. They’re kind of
+                like a vending machine: A user wants to interact with the smart
+                contract so they give it the necessary parameters and it spits
+                out the result of it’s internal computation. That result could
+                be simply creating and assigning ownership of a digital asset
+                (minting an NFT)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default bg-light p-5 h-100">
+            <div class="panel-heading">
+              <h2 class="panel-title">The Ethereum Virtual Machine</h2>
+            </div>
+            <div class="panel-body lead">
+              The Ethereum Virtual Machine is a canonical computer whose state
+              everyone on the network agrees on. This machine can perform
+              arbitrary computations based on requests from nodes. This causes a
+              change in EVMs "state". This state is agreed upon by everybody
+              using the network because EVM relies on all of the individual
+              nodes to perform these computations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /fourth section -->
+
+  <!-- fifth section -->
+  <div id="footr" class="footr"></div>
+  <div class="footr container-fluid" id="footr">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default bg-light p-5 h-100">
+            <div class="panel-heading">
+              <h2 class="panel-title text-center">Additional information</h2>
+            </div>
+            <div class="panel-body lead">
+              There's a lot to learn about being a blockchain developer. Here
+              are a few complimentary resources to help flesh out your
+              knowledge.
+              <ul>
+                <li>
+                  <a
+                    href="https://ethereum.org/en/developers/docs/intro-to-ethereum/#what-is-ethereum"
+                    target="blank"
+                    >Intro to Ethereum</a
+                  >
+                </li>
+                <li>
+                  <a href=" https://cryptozombies.io/en/course/" target="blank"
+                    >Learn Solidity With a Game</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=coQ5dg8wM2o"
+                    target="blank"
+                    >Build Your First Blockchain App</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /fifth section -->
+
+    <div id="contact"></div>
+
+    <!-- footer -->
+    <!-- <footer>
+      <div class="container">
+        <p class="text-right">Copyright &copy; Your Company 2015</p>
+      </div>
+    </footer> -->
+    <!-- /footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </div>
+</body>
